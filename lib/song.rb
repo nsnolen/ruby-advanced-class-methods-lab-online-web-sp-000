@@ -41,7 +41,7 @@ class Song
     self.all.sort_by{|song| song.name}
   end
 
-  def new_from_filename(filename)
+  def self.new_from_filename(filename)
     file = filename.split(" -")
     artist_name = file[0]
     song_name = file[1].gsub(".mp3", "")
